@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pkpod
+spec: # to create env
+    containers:
+    - name: pkc
+      image: httpd
+      ports:
+        - containerPort: 80
