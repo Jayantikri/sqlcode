@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: web
+spec:
+  imagePullSecrets:
+  - name: mysec
+  containers:
+  - name: web
+    image: jaya91/private
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 80

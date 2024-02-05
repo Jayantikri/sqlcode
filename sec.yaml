@@ -1,0 +1,8 @@
+apiVersion: v1
+data:
+  .dockerconfigjson: eyJhdXRocyI6eyJkb2NrZXIuaW8iOnsidXNlcm5hbWUiOiJqYXlhOTEiLCJwYXNzd29yZCI6Ikt1bWFyaTk2ODAiLCJhdXRoIjoiYW1GNVlUa3hPa3QxYldGeWFUazJPREE9In19fQ==
+kind: Secret
+metadata:
+  creationTimestamp: null
+  name: mysec
+type: kubernetes.io/dockerconfigjson
