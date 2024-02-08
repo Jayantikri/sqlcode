@@ -39,18 +39,17 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-
   415  kubectl get pod -o wide
   416  kubectl describe pod pkpod
   kubectl delete pod pkpod
-  449  kubectl get pod
   450  kubectl apply -f pod1.yml
   451  kubectl apply -f pod1.yaml
   452  kubectl delete -f pod1.yaml
   453  kubectl run hello --image nginx --port 80
-  454  kubectl get pod
+  
   455  kubectl run hello --image nginx --port 80 --dry-run=client
   456  kubectl get pod
   457  kubectl run hello --image nginx --port 80 --dry-run=client -o=yaml
   458  kubectl run hello --image nginx --port 80 --dry-run=client -o=yaml >podtest.yaml
   459  kubectl apply -f podtest.yaml
-  460  kubectl get pod
+  
   461  kubectl exec -it hello --bash
   462  kubectl exec -it hello -- bash
   463  kubectl get pod
@@ -64,4 +63,25 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-
   471  kubectl delete helloc
   472  kubectl delete pod helloc
   473  kubectl delete pod hello
-  474  kubectl get pod
+  474 export KUBECONFIG=akashsir.conf 
+  732  kubectl get node
+  733  export KUBECONFIG=/home/jaya/akashsir.conf 
+  734  kubectl get node
+  735  minikube start
+  736  kubectl get node
+kubectl apply -f rc.yaml
+  748  cd sqlcode
+  749  ls
+  750  kubectl apply -f rc.yaml
+  751  kubectl get pod
+  752  kubectl get pod --show-lables
+  753  kubectl get pod --show-labels
+  754  kubectl get pod -o wide
+  755  kubectl delete pod rc-tmmld
+  756  kubectl get pod
+  757  kubectl edit rc rc
+  758  kubectl apply -f rc.yaml
+  759  kubectl get pod
+  760  kubectl edit rc rc
+  761  kubectl get pod
+  762  kubectl apply -f rc.yaml
