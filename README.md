@@ -65,13 +65,10 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-
   473  kubectl delete pod hello
   474 export KUBECONFIG=akashsir.conf 
   732  kubectl get node
-  733  export KUBECONFIG=/home/jaya/akashsir.conf 
-  734  kubectl get node
+  733  export KUBECONFIG=/home/jaya/akashsir.conf
   735  minikube start
   736  kubectl get node
 kubectl apply -f rc.yaml
-  748  cd sqlcode
-  749  ls
   750  kubectl apply -f rc.yaml
   751  kubectl get pod
   752  kubectl get pod --show-lables
