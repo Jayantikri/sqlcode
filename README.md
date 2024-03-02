@@ -45,6 +45,7 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-
   453  kubectl run hello --image nginx --port 80
   
   455  kubectl run hello --image nginx --port 80 --dry-run=client
+
   456  kubectl get pod
   457  kubectl run hello --image nginx --port 80 --dry-run=client -o=yaml
   458  kubectl run hello --image nginx --port 80 --dry-run=client -o=yaml >podtest.yaml
@@ -81,4 +82,6 @@ kubectl apply -f rc.yaml
   759  kubectl get pod
   760  kubectl edit rc rc
   761  kubectl get pod
-  762  kubectl apply -f rc.yaml
+   kubectl apply -f rc.yaml
+  kubectl expose pod pvpod-7ccc5b6fc7-5rr68 --type NodePort --port 80 
+  kubectl get svc
