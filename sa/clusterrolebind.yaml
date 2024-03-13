@@ -1,0 +1,14 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+   name: mysa-cluster-role-bind
+subjects:
+- kind: ServiceAccount
+  name: mysa
+  namespace: default
+roleRef:
+  kind: ClusterRole
+  name: mysa-cluster-role
+  apiGroup: rbac.authorization.k8s.io
+
+    

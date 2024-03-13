@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Config
+clusters:
+- name: my-cluster
+  cluster:
+    server: https://18.141.249.171:6443
+contexts:
+- name: mysa
+  context:
+    cluster: my-cluster
+    user: mysa
+users:
+- name: mysa
+  user:
+    token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImhqOG9HVkk4OVBfUHNDQU1FYTJpYzBqOUhwQmJzTzB6U3VhS2VvSzA4eEEifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiXSwiZXhwIjoxNzA5NzI3OTQ4LCJpYXQiOjE3MDk3MjQzNDgsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJkZWZhdWx0Iiwic2VydmljZWFjY291bnQiOnsibmFtZSI6Im15c2EiLCJ1aWQiOiIyM2RiN2VkOC01NzE1LTRlZDEtOGZjMy04Zjg0ODdlZDE4OTAifX0sIm5iZiI6MTcwOTcyNDM0OCwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50OmRlZmF1bHQ6bXlzYSJ9.rtyEWHVGxDp-dyqgK4If-R9jAF3h6VjorNAHUSRDMc_i3bL3yxzm7TPrCaCoLtSAGlSungpKBGVylk8otQT1Ac_voj15U6yE128gPAyUBpvd0C1c3RYaDJooE20Eh7B25AFkJyIoq-Xi3Tb2yv_Zr3IleOkOQBPM0Gk-BioBeQ4SU6fPBpRjP8NRFL6w8WhlIZYSgd6IQCayrrgO-vh7fm9y_u5gy3R8Ae-sNBP7Mlz2X4Sezs9OHynDciUTsAI4OQeJBVDIh0sD9fGziO9OKnc_BECsmDpFiuLM5gM7q4cjGr0PMaZ6wiCUp7JegRIQdbPh8INFLapkp-UlcVL_jg
+
+current-context: mysa

@@ -1,8 +1,11 @@
 apiVersion: v1
 data:
-  .dockerconfigjson: eyJhdXRocyI6eyJkb2NrZXIuaW8iOnsidXNlcm5hbWUiOiJqYXlhOTEiLCJwYXNzd29yZCI6Ikt1bWFyaTk2ODAiLCJhdXRoIjoiYW1GNVlUa3hPa3QxYldGeWFUazJPREE9In19fQ==
+  .dockerconfigjson: eyJhdXRocyI6eyJkb2NrZXIuaW8iOnsidXNlcm5hbWUiOiJqYXlhOTEiLCJwYXNzd29yZCI6Ikt1bWFyaUA5NjgwIiwiYXV0aCI6ImFtRjVZVGt4T2t0MWJXRnlhVUE1TmpndyJ9fX0=
 kind: Secret
 metadata:
-  creationTimestamp: null
+  creationTimestamp: "2024-03-04T09:10:40Z"
   name: mysec
+  namespace: default
+  resourceVersion: "71900"
+  uid: f5a020d0-6c60-40fd-b416-97d6395768cf
 type: kubernetes.io/dockerconfigjson
