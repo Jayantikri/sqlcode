@@ -1,3 +1,7 @@
+### to change nginx config file location
+/etc/nginx/nginx.conf
+
+
 ## command to check iptable
 ## iptables is an application that allows a user to configure the firewall functionality built into the Linux kernel
 iptables -t filter -L 
