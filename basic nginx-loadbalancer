@@ -1,0 +1,22 @@
+http {
+
+        include /etc/nginx/mime.types;
+
+
+        access_log /var/log/nginx/access.log;
+        error_log /var/log/nginx/error.log;
+
+      upstream appserver {
+               server 3.108.254.214;
+               server 13.233.91.34;
+
+      }
+
+      server {
+
+             location / {
+
+          proxy_pass http://appserver;
+        }
+}
+}
